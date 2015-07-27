@@ -41,11 +41,12 @@
 
 <a name="android"></a>
 #####Android平台
-	`Android`上的`firefox`在页面初始化的时候会将`window`的`width`置为默认宽度`980px`，等到页面完成时才会计算所需宽度并将`window`置为真正值，此时会默认触发在`window`上的`onload`和`onresize`事件。所以想要取得`window`的真正`width`值应该在这两个事件的回调方法里面写。
+`Android`上的`firefox`在页面初始化的时候会将`window`的`width`置为默认宽度`980px`，等到页面完成时才会计算所需宽度并将`window`置为真正值，此时会默认触发在`window`上的`onload`和`onresize`事件。所以想要取得`window`的真正`width`值应该在这两个事件的回调方法里面写。
 
 <a name="canvas-twice"></a>
-	- **canvas rendered twice on Android device browser**
-		在`Android`设备上使用`canvas`绘图，有时候会出现画了两次的情况，解决方法是在`canvas`的包裹元素上的`overflow:hidden`改为`visible`
+- **canvas rendered twice on Android device browser**
+
+在`Android`设备上使用`canvas`绘图，有时候会出现画了两次的情况，解决方法是在`canvas`的包裹元素上的`overflow:hidden`改为`visible`
 
 <a name="ios"></a>
 #####iOS平台
