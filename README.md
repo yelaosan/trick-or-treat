@@ -15,9 +15,6 @@
 
 ####浏览器特性差异
 - `firefox`绝对定位不显式设置`left`值时的计算值并不是从父元素的左侧，而是父元素的可用空间的左侧
-![Alt text](./image/Firefox.png)
-可以看到`firefox`下面计算后的`left`值为`110px`，也就是从父元素的可用空间开始的
-![Alt text](./image/chrome.png)
 而`chrome`下面`left`计算值是`auto`。所以为了避免出现如图的问题，需要显示设置其`left`值为0；
 
 ####移动端踩坑
